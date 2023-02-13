@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Note from "./Note";
 import Login from "./Login";
 import Counter from "./Counter";
+import Time from "./Time";
 import notes from "../notes";
 
 // function createNote(note){
@@ -21,7 +22,10 @@ function App() {
       <Header />
       {isLoggedIn ? (
         <main>
-          <Counter />
+          <section>
+            <Counter />
+            <Time />
+          </section>
           <section>
             {notes.map((note) => (
               <Note
